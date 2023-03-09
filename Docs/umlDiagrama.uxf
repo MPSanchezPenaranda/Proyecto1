@@ -1,0 +1,75 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>350</x><y>0</y><w>210</w><h>100</h></coordinates><panel_attributes>Huesped
+--
+- nombre: String
+- documento: String
+- correo: String
+- numero: String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>180</y><w>210</w><h>160</h></coordinates><panel_attributes>Habitacion
+--
+- id: String
+- ubicacion: String
+- capacidad: int
+- tipo: String
+- balcon: boolean
+- vista: boolean
+- cocina: boolean
+- camas: ArrayList&lt;Cama&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>380</y><w>210</w><h>70</h></coordinates><panel_attributes>Administrador
+--
+- login: String
+- password: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>180</y><w>210</w><h>80</h></coordinates><panel_attributes>Recepcionista
+--
+- login: String
+- password: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>910</x><y>310</y><w>210</w><h>70</h></coordinates><panel_attributes>Empleado
+--
+- login: String
+- password: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>460</y><w>160</w><h>70</h></coordinates><panel_attributes>Restaurante
+--
+- menu: ArrayList&lt;Platillo&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>310</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Servicio
+--
+- tarifa: double
+- horaInicio: Date
+- horaFinal: Date  
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>310</y><w>210</w><h>90</h></coordinates><panel_attributes>Factura
+--
+- valorHospedaje: double
+- gastosTotales: double
+- valorServicios: double
+- servicios: ArrayList&lt;servicio&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>180</y><w>210</w><h>80</h></coordinates><panel_attributes>Reserva
+--
+- huespedes: ArrayList&lt;Huesped&gt;
+- noches: int
+- cantHuespedes: int
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>90</y><w>90</w><h>110</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1
+reservación</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>200</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+gestión</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>210</y><w>80</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1= 1..*</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>250</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>330</y><w>40</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>830</x><y>330</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+gestión</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>390</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;140;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>330</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+cuenta</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>390</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>460</y><w>140</w><h>50</h></coordinates><panel_attributes>Spa
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>120</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>70</y><w>210</w><h>60</h></coordinates><panel_attributes>Cama
+--
+- tipo: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>520</y><w>210</w><h>70</h></coordinates><panel_attributes>Platillo
+--
+- nombre: String
+- valor: double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>470</y><w>150</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+menu</panel_attributes><additional_attributes>10;50;10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>840</x><y>460</y><w>140</w><h>50</h></coordinates><panel_attributes>Turismo
+--
+- tamanoGrupo: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>390</y><w>190</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;170;40;170;70</additional_attributes></element></diagram>
