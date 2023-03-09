@@ -65,12 +65,13 @@ cuenta</panel_attributes><additional_attributes>80;20;10;20</additional_attribut
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>168</y><w>32</w><h>64</h></coordinates><panel_attributes>lt=&lt;-
 m1=*</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>128</y><w>168</w><h>48</h></coordinates><panel_attributes>Cama
 --
-- tipo: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>488</y><w>168</w><h>72</h></coordinates><panel_attributes>Platillo
+- tipo: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>488</y><w>168</w><h>80</h></coordinates><panel_attributes>Platillo
 --
 - nombre: String
 - valor: double
 - horaInicio: Date
-- horaFinal: Date </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>448</y><w>120</w><h>56</h></coordinates><panel_attributes>lt=&lt;-
+- horaFinal: Date
+- servicioHabitacion: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>448</y><w>120</w><h>56</h></coordinates><panel_attributes>lt=&lt;-
 m1=*
 menu</panel_attributes><additional_attributes>10;50;10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>680</x><y>440</y><w>112</w><h>40</h></coordinates><panel_attributes>Turismo
 --
